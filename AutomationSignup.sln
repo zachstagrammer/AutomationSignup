@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomationSignup.Tests", "AutomationSignup.Tests\AutomationSignup.Tests.csproj", "{CFABDA5B-60F9-4419-B6E7-1E08BC432275}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomationSignup", "AutomationSignup\AutomationSignup.csproj", "{C9BA8A80-0AFD-4A2B-A04E-6F14E7F3E65B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CFABDA5B-60F9-4419-B6E7-1E08BC432275}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFABDA5B-60F9-4419-B6E7-1E08BC432275}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFABDA5B-60F9-4419-B6E7-1E08BC432275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9BA8A80-0AFD-4A2B-A04E-6F14E7F3E65B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9BA8A80-0AFD-4A2B-A04E-6F14E7F3E65B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9BA8A80-0AFD-4A2B-A04E-6F14E7F3E65B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9BA8A80-0AFD-4A2B-A04E-6F14E7F3E65B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
