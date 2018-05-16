@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomationSignup.Tests", "AutomationSignup.Tests\AutomationSignup.Tests.csproj", "{CFABDA5B-60F9-4419-B6E7-1E08BC432275}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFABDA5B-60F9-4419-B6E7-1E08BC432275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFABDA5B-60F9-4419-B6E7-1E08BC432275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFABDA5B-60F9-4419-B6E7-1E08BC432275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFABDA5B-60F9-4419-B6E7-1E08BC432275}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69A34CCF-31CA-4CCD-94FA-AC540837F64E}
+	EndGlobalSection
+EndGlobal
