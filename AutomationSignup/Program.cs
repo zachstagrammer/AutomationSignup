@@ -15,8 +15,10 @@ namespace AutomationSignup
             //Launch google developers webpage
 
             IWebDriver driver = new ChromeDriver();
+
             driver.Url = "https://developers.google.com/";
-            Console.WriteLine("Opened Chrome Browser to https://developers.google.com/");
+            Console.WriteLine("Opened Chrome Browser to https://developers.google.com/...");
+
 
             // Confirm text description for Google Cloud Next '18
 
@@ -25,16 +27,17 @@ namespace AutomationSignup
 
             if (getEventDescrText.Contains(googleCloudNextDescr))
             {
-                Console.WriteLine("Google Cloud Next '18 event description confirmed");
+                Console.WriteLine("Google Cloud Next '18 event description confirmed...");
             }
             else
             {
                 Console.WriteLine("Could not find description for Google Cloud Next '18");
             }
 
-            // Click the Google Cloud Next '18 event
 
+            // Click on the Google Cloud Next '18 event
 
+            driver.FindElement(By.Id("google-cloud-next-18br-july-24-26-san-francisco-usa")).Click();
 
             Console.ReadLine();
         }
