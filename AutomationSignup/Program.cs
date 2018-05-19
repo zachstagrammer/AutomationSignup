@@ -31,15 +31,21 @@ namespace AutomationSignup
             }
             else
             {
-                Console.WriteLine("Could not find description for Google Cloud Next '18");
+                Console.WriteLine("Could not find description for Google Cloud Next '18.  Closing browser.");
+                driver.Close();
             }
 
 
             // Click on the Google Cloud Next '18 event
 
             driver.FindElement(By.Id("google-cloud-next-18br-july-24-26-san-francisco-usa")).Click();
+            Console.WriteLine("Navigated to the Google Cloud Next '18 event...");
 
-            Console.ReadLine();
+
+            // Confirm that the first H3 on the page is "Imagine"
+
+
+
         }
     }
 }
