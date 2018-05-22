@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support;
+using OpenQA.Selenium.Support.UI;
 
 namespace AutomationSignup
 {
@@ -58,7 +60,7 @@ namespace AutomationSignup
 
             try
             {
-                var h3Tag = driver.FindElement(By.ClassName("title")).Text;
+                var h3Tag = driver.FindElement(By.ClassName("typography_headline")).Text;
                 
                 if (h3Tag == "Imagine")
                 {
@@ -89,6 +91,26 @@ namespace AutomationSignup
             {
                 Console.WriteLine(e.Message);
             }
+
+
+            // Send keys for input fields
+
+            driver.FindElement(By.Id("firstName")).SendKeys("Zach");
+            driver.FindElement(By.Id("lastName")).SendKeys("Phillips");
+            driver.FindElement(By.Id("email")).SendKeys("myemail@company.com");
+            driver.FindElement(By.Id("jobTitle")).SendKeys("Developer");
+            driver.FindElement(By.Id("company")).SendKeys("My Company");
+
+            var industry = driver.FindElement(By.Id("industry"));
+            var country = driver.FindElement(By.Id("country"));
+
+            var selectIndustry = new SelectElement(industry);
+            selectIndustry.SelectByValue("Education");
+
+            var selectCountry = new SelectElement(country);
+            selectCountry.SelectByValue("US");
+
+            Console.WriteLine("Automation script for Google Cloud Next '18 event form complete");
         }
     }
 }
