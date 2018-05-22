@@ -78,6 +78,17 @@ namespace AutomationSignup
             // Click "Get updates" button
 
 
+            try
+            {
+                var getUpdatesButton = driver.FindElement(By.XPath("//button[contains(text(), 'Get updates')]"));
+
+                getUpdatesButton.Click();
+                Console.WriteLine("Clicked on \"Get updates\" button...");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }
