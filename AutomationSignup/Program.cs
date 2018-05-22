@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Support.UI;
 
 namespace AutomationSignup
 {
@@ -14,6 +13,9 @@ namespace AutomationSignup
         static void Main(string[] args)
         {
             IWebDriver driver = new ChromeDriver();
+
+            var waitTime = 30;
+
 
             //Launch google developers webpage
 
@@ -49,7 +51,8 @@ namespace AutomationSignup
             driver.FindElement(By.Id("google-cloud-next-18br-july-24-26-san-francisco-usa")).Click();
             Console.WriteLine("Navigated to the Google Cloud Next '18 event page...");
 
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30); ;
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(waitTime);
+
 
             // Confirm that the first H3 on the page is "Imagine"
 
@@ -63,15 +66,16 @@ namespace AutomationSignup
                 }
                 else
                 {
-                    Console.WriteLine("Could not find H3 tag \"Imagine\"");
+                    Console.WriteLine("Could not find H3 tag \"Imagine\".  Closing browser.");
                     driver.Close();
                 }
-                
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
+
+            // Click "Get updates" button
 
 
         }
